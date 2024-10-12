@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+{% block title %}Магазины{% endblock %}
+{% block header %}<h1>Игры</h1>{% endblock %}
+
+{% block content %}
+    {% for game in games %}
+        <li>{{ game.title }} | {{ game.description }} Стоимость: {{ game.cost }} <button><a href="#">Купить</a></button></li>
+    {% endfor %}
+{% endblock %}
+
