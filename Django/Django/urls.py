@@ -23,5 +23,5 @@ urlpatterns = [
     path('', sign_up_by_django),
     path('index/', index),
     path('shop/', second),
-    path('stat/', Third.as_view()),
+    path('cart/', Third.as_view()),
 ]
