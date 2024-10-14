@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task1.views import index, second, Third, sign_up_by_django
+from task_paginator import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +25,5 @@ urlpatterns = [
     path('index/', index),
     path('shop/', second),
     path('cart/', Third.as_view()),
+    path('paginator/', views.main),
 ]
